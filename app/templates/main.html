@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket • Innovation Beyond Earth</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="icon" type="image/png" href="../static/Assets/Images/simlelogo.png"/>
+
+</head>
+<body>
+    <!-- Navigation -->
+    {% include 'nav.html' %}
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="stars" id="stars"></div>
+        <div class="hero-content">
+            <h1>The Future of Space Travel</h1>
+            <p>Reimagining rocket technology with unparalleled innovation, precision engineering, and sustainable design.</p>
+            <a href="#about" class="btn">Explore</a>
+        </div>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section class="who-we-are-section" id="about">
+        <div class="who-we-are-container">
+            <div class="who-we-are-heading">
+                <h2>Who We Are</h2>
+            </div>
+            <div class="who-we-are-content">
+                <div class="who-we-are-text">
+                    <p align="justify", class="intro-text">The SimLE Scientific Association is a group of talented and ambitious students from the Gdańsk University of Technology, united primarily by our desire to create.</p>
+                    
+                    <p align="justify">We believe that by working together in interdisciplinary teams, we can reach for the stars, venture where no one has gone before, and do daily what our peers might consider impossible.</p>
+                    
+                    <p align="justify">As part of our circle, we implement programs and projects that bring together students from various disciplines, faculties, and even universities. We create space, tools, and conditions – everything necessary for young people to experience science in practice, pursue their passions, and discover their potential.</p>
+                    
+                </div>
+                <div class="slideshow-container">
+                    <div class="slides-wrapper">
+                        <div class="slide">
+                            <img src="../static/Assets/Images/enginetest.jpg" alt="SimLE Team">
+                            <div class="slide-caption">Our dedicated team of engineers and scientists</div>
+                        </div>
+                        <div class="slide">
+                            <img src="../static/Assets/Images/sciencelogo_bg.jpg" alt="SimLE Lab">
+                            <div class="slide-caption">Our state-of-the-art laboratory facilities</div>
+                        </div>
+                        <div class="slide">
+                            <img src="../static/Assets/Images/join_propulsion_1.jpg" alt="Rocket Launch">
+                            <div class="slide-caption">Testing our latest rocket prototype</div>
+                        </div>
+                        <div class="slide">
+                            <img src="../static/Assets/Images/whatwedo2.JPG" alt="Team Collaboration">
+                            <div class="slide-caption">Collaboration across different disciplines</div>
+                        </div>
+                    </div>
+                    <div class="slide-nav">
+                        <div class="slide-arrow prev-arrow">&#10094;</div>
+                        <div class="slide-arrow next-arrow">&#10095;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="rocket-video" id="technology">
+        <div class="video-container">
+            <div class="video-text">
+                <h2>Engineering Excellence</h2>
+                <p>Watch how our revolutionary rocket technology is changing the future of space travel and exploration.</p>
+            </div>
+            <div class="video-placeholder" id="video-container">
+                
+                <video preload="auto" muted playsinline autoplay loop id="rocket-video" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; object-fit: cover;">
+                    <source src="../static/Assets/Videos/your-banner.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Projects Section -->
+    <section class="gallery" id="gallery">
+        <div class="gallery-container">
+            <div class="gallery-heading">
+                <h2>Our Projects</h2>
+                <p>Discover the innovative programs we're developing at SimLE to push the boundaries of science and technology.</p>
+            </div>
+            <div class="gallery-grid">
+                <a href="#stardust" class="gallery-item project-card">
+                    <img src="../static/Assets/Images/stardustlogo_bg.jpg" alt="Stardust">
+                    <div class="gallery-item-content">
+                        <h3>Stardust</h3>
+                        <p>A stratospheric balloon program exploring the upper atmosphere and beyond.</p>
+                    </div>
+                </a>
+                <a href="/simba" class="gallery-item project-card">
+                    <img src="../static/Assets/Images/simba-history2.jpg" alt="SimBa">
+                    <div class="gallery-item-content">
+                        <h3>SimBa</h3>
+                        <p>Our sounding rocket program developing next-generation aerospace technologies.</p>
+                    </div>
+                </a>
+                <a href="#science" class="gallery-item project-card">
+                    <img src="../static/Assets/Images/sciencelogo_bg.jpg" alt="Science">
+                    <div class="gallery-item-content">
+                        <h3>Science</h3>
+                        <p>Our scientific experiment department pushing the boundaries of knowledge.</p>
+                    </div>
+                </a>
+                <a href="/seasentinel" class="gallery-item project-card">
+                    <img src="../static/Assets/Images/seasentinellogo_bg.jpg" alt="SeaSentinel">
+                    <div class="gallery-item-content">
+                        <h3>SeaSentinel</h3>
+                        <p>Building autonomous surface vehicles for marine research and conservation.</p>
+                    </div>
+                </a>
+                <a href="#singo" class="gallery-item project-card">
+                    <img src="../static/Assets/Images/join_propulsion_1.jpg" alt="Singo">
+                    <div class="gallery-item-content">
+                        <h3>Singo</h3>
+                        <p>A drone project for measuring snow cover height with advanced sensors.</p>
+                    </div>
+                </a>
+                <a href="#stormdust" class="gallery-item project-card">
+                    <img src="../static/Assets/Images/enginetest.jpg" alt="STORMDUST">
+                    <div class="gallery-item-content">
+                        <h3>STORMDUST</h3>
+                        <p>Experiments studying chemical compounds and microorganisms in the stratosphere.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="cta-container">
+            <h2>Join The Future of Space Exploration</h2>
+            <p>Be part of the next giant leap for mankind. Sign up for updates on our missions, technology breakthroughs, and opportunities.</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Rocket</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Newsroom</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Technology</h3>
+                <ul>
+                    <li><a href="#">Propulsion Systems</a></li>
+                    <li><a href="#">Navigation</a></li>
+                    <li><a href="#">Life Support</a></li>
+                    <li><a href="#">Research</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Missions</h3>
+                <ul>
+                    <li><a href="#">Launch Schedule</a></li>
+                    <li><a href="#">Past Missions</a></li>
+                    <li><a href="#">Future Projects</a></li>
+                    <li><a href="#">Commercial Flights</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Partnerships</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Media Inquiries</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Rocket. All rights reserved. Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../static/js/script.js"></script>
+</body>
+</html>

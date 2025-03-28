@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimBa • Rocket Innovation</title>
+    <link rel="stylesheet" href="../static/css/simba-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="../static/Assets/Images/simlelogo.png"/>
+
+</head>
+<body>
+    <!-- Navigation -->
+    {% include 'nav.html' %}
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="bg-image"></div>
+        <div class="logo-overlay">
+            <img src="../static/Assets/Images/simbalogo.svg" alt="SimBa Logo">
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats" id="stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <h2 id="stat-members">0</h2>
+                <p>Team Members</p>
+            </div>
+            <div class="stat-item">
+                <h2 id="stat-rockets">0</h2>
+                <p>Rockets Built</p>
+            </div>
+            <div class="stat-item">
+                <h2 id="stat-altitude">0</h2>
+                <p>Max Altitude (m)</p>
+            </div>
+            <div class="stat-item">
+                <h2 id="stat-started">0</h2>
+                <p>Founded</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-heading">
+                <h2>About SimBa</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="intro-text">SimBa is our pioneering sounding rocket program at the SimLE Scientific Association, pushing the boundaries of aerospace engineering through student innovation.</p>
+                    
+                    <p>Our team designs, manufactures, and launches experimental rockets that serve as platforms for scientific research, technological development, and educational outreach.</p>
+                    
+                    <p>By drawing together students from mechanical engineering, electronics, computer science, and materials science, SimBa embodies the interdisciplinary approach that defines SimLE's vision.</p>
+                    
+                    <p>Each rocket iteration represents our commitment to continuous improvement, incorporating cutting-edge components, materials, and design strategies to achieve ever more ambitious mission objectives.</p>
+                </div>
+                <div class="slideshow-container">
+                    <div class="slides-wrapper">
+                        <div class="slide">
+                            <img src="../static/Assets/Images/enginetest.jpg" alt="Engine Test">
+                            <div class="slide-caption">Engine testing facility</div>
+                        </div>
+                        <div class="slide">
+                            <img src="../static/Assets/Images/simba-history2.jpg" alt="Rocket Assembly">
+                            <div class="slide-caption">Rocket assembly process</div>
+                        </div>
+                        <div class="slide">
+                            <img src="../static/Assets/Images/join_propulsion_1.jpg" alt="Propulsion Team">
+                            <div class="slide-caption">Propulsion team at work</div>
+                        </div>
+                        <div class="slide">
+                            <img src="../static/Assets/Images/whatwedo2.JPG" alt="Launch Preparation">
+                            <div class="slide-caption">Preparing for launch</div>
+                        </div>
+                    </div>
+                    <div class="slide-nav">
+                        <div class="slide-arrow prev-arrow">&#10094;</div>
+                        <div class="slide-arrow next-arrow">&#10095;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="history" id="history">
+        <div class="history-content">
+            <h2>Our Journey: The Evolution of SimBa</h2>
+            <p>
+                SimBa began as a bold student initiative driven by passion for aerospace engineering and scientific exploration. What started as sketches and calculations has evolved into a comprehensive rocket development program with multiple successful launches and innovative designs. Our team has grown from a handful of enthusiasts to a diverse group of specialists working across multiple engineering disciplines.
+            </p>
+        </div>
+        <div class="slideshow">
+            <img src="../static/Assets/Images/whatwedo2.jpg" alt="SimBa History 1" class="active">
+            <img src="../static/Assets/Images/simba-history2.jpg" alt="SimBa History 2">
+            <img src="../static/Assets/Images/enginetest.jpg" alt="SimBa History 3">
+            <img src="../static/Assets/Images/join_propulsion_1.jpg" alt="SimBa History 4">
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline" id="timeline">
+        <div class="timeline-heading">
+            <h2>SimBa Development Timeline</h2>
+        </div>
+        <div class="timeline-container">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item">
+                <div class="timeline-block">
+                    <div class="timeline-image">
+                        <img src="../static/Assets/Images/milestone2017.jpg" alt="Milestone 2017">
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2017</div>
+                        <p>Establishment of the SimBa project and the start of designing the first rocket, R1. Its main feature was the ability to actively control its trajectory using fins.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item">
+                <div class="timeline-block">
+                    <div class="timeline-image">
+                        <img src="../static/Assets/Images/milestone2018.jpg" alt="Milestone 2018">
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2018</div>
+                        <p>R2 prototype completed and first static engine tests conducted. The team expanded with new members bringing expertise in composite materials and electronics.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item">
+                <div class="timeline-block">
+                    <div class="timeline-image">
+                        <img src="../static/Assets/Images/join_propulsion_1.jpg" alt="Milestone 2019">
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2019</div>
+                        <p>R3 rocket built with improved avionics system and successful test flight reaching 2.5km altitude. First international competition participation.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Timeline Item 4 -->
+            <div class="timeline-item">
+                <div class="timeline-block">
+                    <div class="timeline-image">
+                        <img src="../static/Assets/Images/milestone2020.jpg" alt="Milestone 2020">
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020</div>
+                        <p>R4 rocket designed with advanced propulsion system. Virtual development continued despite pandemic restrictions.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Timeline Item 5 -->
+            <div class="timeline-item">
+                <div class="timeline-block">
+                    <div class="timeline-image">
+                        <img src="../static/Assets/Images/milestone2023.jpg" alt="Milestone 2023">
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023</div>
+                        <p>R6 rocket built and showcased at the Spaceport America Cup competition, reaching a new altitude record for the team.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Our Teams Section -->
+    <section class="join-teams" id="teams">
+        <h2>Join Our Teams</h2>
+        <div class="teams-container">
+            <div class="team-card">
+                <i class="fas fa-fire"></i>
+                <h3>Propulsion</h3>
+                <div class="sub-areas">
+                    <span class="sub-area-card">Engine</span>
+                    <span class="sub-area-card">Hydraulics</span>
+                    <span class="sub-area-card">Testing</span>
+                </div>
+                <div class="team-description">
+                    <p>The Propulsion team designs, builds, and tests the rocket engines that power our vehicles. We work with cutting-edge technologies to achieve optimal performance and reliability.</p>
+                </div>
+                <a href="#contact" class="read-more">Read more</a>
+            </div>
+
+            <div class="team-card">
+                <i class="fas fa-satellite-dish"></i>
+                <h3>Ground Segment</h3>
+                <div class="sub-areas">
+                    <span class="sub-area-card">Communication</span>
+                    <span class="sub-area-card">Tracking</span>
+                    <span class="sub-area-card">Mission Control</span>
+                </div>
+                <div class="team-description">
+                    <p>The Ground Segment team is the crucial link between our rockets in flight and mission control. We handle communication, tracking, and real-time data analysis.</p>
+                </div>
+                <a href="#contact" class="read-more">Read more</a>
+            </div>
+
+            <div class="team-card">
+                <i class="fas fa-parachute-box"></i>
+                <h3>Recovery</h3>
+                <div class="sub-areas">
+                    <span class="sub-area-card">Parachute Systems</span>
+                    <span class="sub-area-card">Landing Analysis</span>
+                    <span class="sub-area-card">Retrieval</span>
+                </div>
+                <div class="team-description">
+                    <p>The Recovery team is dedicated to the safe return of our rockets after each launch. We design and implement advanced parachute systems and analyze landing trajectories.</p>
+                </div>
+                <a href="#contact" class="read-more">Read more</a>
+            </div>
+
+            <div class="team-card">
+                <i class="fas fa-wrench"></i>
+                <h3>Structures</h3>
+                <div class="sub-areas">
+                    <span class="sub-area-card">Airframe</span>
+                    <span class="sub-area-card">Materials</span>
+                    <span class="sub-area-card">Stress Analysis</span>
+                </div>
+                <div class="team-description">
+                    <p>The Structures team is the backbone of our rocket development, responsible for designing and building the rocket's airframe and ensuring structural integrity.</p>
+                </div>
+                <a href="#contact" class="read-more">Read more</a>
+            </div>
+
+            <div class="team-card">
+                <i class="fas fa-microchip"></i>
+                <h3>Hardware</h3>
+                <div class="sub-areas">
+                    <span class="sub-area-card">Avionics</span>
+                    <span class="sub-area-card">Sensors</span>
+                    <span class="sub-area-card">Power Systems</span>
+                </div>
+                <div class="team-description">
+                    <p>The Hardware team is at the heart of our rocket's electronic systems. We design and integrate avionics, sensors, and maintain reliable power systems.</p>
+                </div>
+                <a href="#contact" class="read-more">Read more</a>
+            </div>
+
+            <div class="team-card">
+                <i class="fas fa-code"></i>
+                <h3>Software</h3>
+                <div class="sub-areas">
+                    <span class="sub-area-card">Flight Control</span>
+                    <span class="sub-area-card">Data Analysis</span>
+                    <span class="sub-area-card">Simulation</span>
+                </div>
+                <div class="team-description">
+                    <p>The Software team develops the algorithms that guide and control our rockets. We analyze flight data, create simulations, and optimize performance.</p>
+                </div>
+                <a href="#contact" class="read-more">Read more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="cta-container">
+            <h2>Join The SimBa Project</h2>
+            <p>Be part of our rocket engineering adventure. Apply today to join our team, contribute to our missions, and help push the boundaries of student aerospace innovation.</p>
+            <a href="#" class="btn">Apply Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>SimBa</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Achievements</a></li>
+                    <li><a href="#">Research</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Technology</h3>
+                <ul>
+                    <li><a href="#">Propulsion</a></li>
+                    <li><a href="#">Avionics</a></li>
+                    <li><a href="#">Recovery</a></li>
+                    <li><a href="#">Materials</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Projects</h3>
+                <ul>
+                    <li><a href="#">SimBa</a></li>
+                    <li><a href="#">Stardust</a></li>
+                    <li><a href="#">SeaSentinel</a></li>
+                    <li><a href="#">Science</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Partnerships</a></li>
+                    <li><a href="#">Sponsorships</a></li>
+                    <li><a href="#">Media</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 SimLE Scientific Association. All rights reserved. Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for timeline images -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img id="modal-img" class="modal-content">
+    </div>
+
+    <script src="../static/js/simba-script.js"></script>
+</body>
+</html>

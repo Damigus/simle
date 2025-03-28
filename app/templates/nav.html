@@ -1,0 +1,28 @@
+<nav>
+    <div class="nav-container">
+        <a href="/main"><img src="../static/Assets/Images/simlelogo.png" alt="Simle Logo" class="logo"></a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+
+            {% if active_page == 'main' %}
+            <a href="#technology">Technology</a>
+            <a href="#gallery">Gallery</a>
+            {% endif %}
+
+            {% if active_page == 'seasentinel' %}
+            <a href="#projects">Projects</a>
+            {% endif %}
+
+            {% if active_page == 'simba' %}
+            <a href="#history">History</a>
+            <a href="#timeline">Timeline</a>
+            {% endif %}
+
+            {% if active_page == 'seasentinel' or active_page =='simba' %}
+            <a href="#teams">Teams</a>
+            {% endif %}
+
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</nav>

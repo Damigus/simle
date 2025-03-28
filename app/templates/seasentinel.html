@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeaSentinel • Autonomous Surface Vehicles</title>
+    <link rel="stylesheet" href="../static/css/seasentinel-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="../static/Assets/Images/simlelogo.png"/>
+
+</head>
+<body>
+    <!-- Navigation -->
+    {% include 'nav.html' %}
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="bg-image"></div>
+        <div class="logo-overlay">
+            <img src="../static/Assets/Images/sentinel_logo.png" alt="SeaSentinel Logo">
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats" id="stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <h2 id="stat-members">100+</h2>
+                <p>Team Members</p>
+            </div>
+            <div class="stat-item">
+                <h2 id="stat-vehicles">3</h2>
+                <p>Vehicles Built</p>
+            </div>
+            <div class="stat-item">
+                <h2 id="stat-position">7th</h2>
+                <p>Best Competition Position</p>
+            </div>
+            <div class="stat-item">
+                <h2 id="stat-started">2021</h2>
+                <p>Founded</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-heading">
+                <h2>About SeaSentinel</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="intro-heading">Who are we?</h3>
+                    <p class="intro-text">Since the establishment of the SeaSentinel Programme by Igor Rusiecki in November 2021, over 100 students have participated in its activities at some point in time.</p>
+                    
+                    <p>Our team brings together students and doctoral candidates from various years and fields of study. Students specializing in computer science, ocean engineering, mechanical engineering, electronics, telecommunications, automation, and robotics will all find something for themselves in the SeaSentinel Programme.</p>
+                    
+                    <h3 class="intro-heading">What do we do?</h3>
+                    <p>So far, two vehicles have been built: ASV Perkoz and ASV Rybitwa. Both were constructed to participate in the RoboBoat competition, achieving 9th place (out of 21 teams) and 7th place (out of 16 teams) in consecutive editions of the contest.</p>
+                    
+                    <p>The latest project of our team is the ASV Zimorodek, which we are preparing for the RoboBoat 2025 competition.</p>
+                </div>
+                <div class="slideshow-container">
+                    <div class="slides-wrapper">
+                        <div class="slide">
+                            <img src="../static/assets/team/team2.1.jpg" alt="Team Photo">
+                            <div class="slide-caption">Our dedicated team of engineers</div>
+                        </div>
+                        <div class="slide">
+                            <img src="../static/assets/team/team2.jpg" alt="Team at Work">
+                            <div class="slide-caption">Team working on autonomous vehicles</div>
+                        </div>
+                        <div class="slide">
+                            <img src="../static/assets/team/team.jpg" alt="ASV Platform">
+                            <div class="slide-caption">Testing our latest ASV platform</div>
+                        </div>
+                        <div class="slide">
+                            <img src="../static/assets/team/szef.jpg" alt="Testing">
+                            <div class="slide-caption">Field testing session</div>
+                        </div>
+                    </div>
+                    <div class="slide-nav">
+                        <div class="slide-arrow prev-arrow">&#10094;</div>
+                        <div class="slide-arrow next-arrow">&#10095;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission" id="mission">
+        <div class="mission-content">
+            <h2>Our Mission</h2>
+            <p>
+                Maritime Autonomous Surface Ships are one of the main directions of development in the maritime industry in the 21st century. SeaSentinel Programme stemmed from a vision of a safer, more cost-effective maritime world. We aim to educate students of Gdańsk University of Technology in the field of autonomous vehicles.
+            </p>
+            <p>
+                Through their work in the Programme, students have the opportunity to acquire or enhance both engineering-specific skills, such as 3D modeling, programming, soldering, designing printed circuit boards, 3D printing, working with technical documentation, and manufacturing laminate components, as well as soft skills such as teamwork, communication, self-organization, creativity, and discipline. This goal is achieved through the construction and development of Autonomous Surface Vehicle technologies.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="projects-heading">
+            <h2>Our Vehicles</h2>
+        </div>
+        <div class="projects-container">
+            <!-- Vehicle 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="../static/Assets/Projects/perkoz.jpg" alt="ASV Perkoz">
+                </div>
+                <div class="project-content">
+                    <h3>ASV Perkoz</h3>
+                    <p>Our first autonomous surface vehicle, designed and built to participate in the RoboBoat competition. Achieved 9th place out of 21 teams competing.</p>
+                    <a href="#" class="project-btn">Learn More</a>
+                </div>
+            </div>
+            
+            <!-- Vehicle 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="../static/Assets/Projects/rybitwa.jpg" alt="ASV Rybitwa">
+                </div>
+                <div class="project-content">
+                    <h3>ASV Rybitwa</h3>
+                    <p>Our second autonomous vehicle featuring improved navigation and control systems. Placed 7th out of 16 teams in the RoboBoat competition.</p>
+                    <a href="#" class="project-btn">Learn More</a>
+                </div>
+            </div>
+            
+            <!-- Vehicle 3 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="../static/Assets/Projects/zimorodek.png" alt="ASV Zimorodek">
+                </div>
+                <div class="project-content">
+                    <h3>ASV Zimorodek</h3>
+                    <p>Our latest project currently in development for the RoboBoat 2025 competition, featuring advanced autonomous capabilities and sensors.</p>
+                    <a href="#" class="project-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section" id="team">
+        <div class="team-heading">
+            <h2>Meet Our Team</h2>
+        </div>
+        
+        <div class="team-category">
+            <h3>Project Management</h3>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="../static/assets/team/SimLe_sesja_002-min.jpg" alt="Igor Rusiecki">
+                    <h4>Igor Rusiecki</h4>
+                    <p>Programme Manager<br>Mechanical Team Leader</p>
+                </div>
+                <div class="team-member">
+                    <img src="../static/assets/team/NSZ.jpeg" alt="Norbert Szulc">
+                    <h4>Norbert Szulc</h4>
+                    <p>Special Advisor</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="team-category">
+            <h3>Electrical Team</h3>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="../static/assets/team/SimLe_sesja_034-min.jpg" alt="Cezary Wieczorkowski">
+                    <h4>Cezary Wieczorkowski</h4>
+                    <p>Electrical Team Leader</p>
+                </div>
+                <div class="team-member">
+                    <img src="../static/assets/team/SimLe_sesja_017-min.jpg" alt="Wojciech Miłosz">
+                    <h4>Wojciech Miłosz</h4>
+                    <p>Deputy Electrical Team Leader</p>
+                </div>
+                <div class="team-member">
+                    <img src="../static/assets/team/SimLe_sesja_032-min.jpg" alt="Karol Rzepiński">
+                    <h4>Karol Rzepiński</h4>
+                    <p>Electrical Engineer</p>
+                </div>
+                <div class="team-member">
+                    <img src="../static/assets/team/jan_krasinski.jpeg" alt="Jan Krasiński">
+                    <h4>Jan Krasiński</h4>
+                    <p>Electrical Engineer</p>
+                </div>
+                <div class="team-member">
+                    <img src="../static/assets/team/tytus_nagler.jpeg" alt="Tytus Nagler">
+                    <h4>Tytus Nagler</h4>
+                    <p>Electrical Engineer</p>
+                </div>
+                <div class="team-member">
+                    <img src="../static/assets/team/SimLe_sesja_006-min.jpg" alt="Piotr Wykowski">
+                    <h4>Piotr Wykowski</h4>
+                    <p>Electrical Engineer</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="team-category">
+            <h3>Mechanical Team</h3>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="../static/assets/team/SimLe_sesja_005-min.jpg" alt="Piotr Stroiński">
+                    <h4>Piotr Stroiński</h4>
+                    <p>Deputy Programme Manager<br>Deputy Mechanical Team Leader</p>
+                </div>
+                <div class="team-member">
+                    <img src="../static/assets/team/SimLe_sesja_030-min.jpg" alt="Paulina Prudel">
+                    <h4>Paulina Prudel</h4>
+                    <p>Mechanical Engineer</p>
+                </div>
+                <div class="team-member">
+                    <img src="../static/assets/team/SimLe_sesja_019-min.jpg" alt="Maciej Nocoń">
+                    <h4>Maciej Nocoń</h4>
+                    <p>Mechanical Engineer</p>
+                </div>
+                <div class="team-member">
+                    <img src="../static/assets/team/dalach.jpeg" alt="Jędrzej Dalach">
+                    <h4>Jędrzej Dalach</h4>
+                    <p>Mechanical Engineer</p>
+                </div>
+                <div class="team-member">
+                    <img src="../static/assets/team/kwiek.jpeg" alt="Aleksander Kwiek">
+                    <h4>Aleksander Kwiek</h4>
+                    <p>Concept Artist Designer</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="team-category">
+            <h3>Onboard Processing Team</h3>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="../static/assets/team/SimLe_sesja_013-min.jpg" alt="Marcel Skierkowski">
+                    <h4>Marcel Skierkowski</h4>
+                    <p>Onboard Processing Team Leader</p>
+                </div>
+                <div class="team-member">
+                    <img src="../static/assets/team/SimLe_sesja_016-min.jpg" alt="Tomasz Ujazdowski">
+                    <h4>Tomasz Ujazdowski</h4>
+                    <p>Deputy Onboard Processing Team Leader</p>
+                </div>
+                <div class="team-member">
+                    <img src="../static/assets/team/SimLe_sesja_015-min.jpg" alt="Patryk Sobolewski">
+                    <h4>Patryk Sobolewski</h4>
+                    <p>Software Developer</p>
+                </div>
+                <div class="team-member">
+                    <img src="../static/assets/team/SimLe_sesja_018-min.jpg" alt="Sergiusz Pyskowacki">
+                    <h4>Sergiusz Pyskowacki</h4>
+                    <p>Software Developer</p>
+                </div>
+                <div class="team-member">
+                    <img src="../static/assets/team/JLink.png" alt="Jakub Link">
+                    <h4>Jakub Link</h4>
+                    <p>Software Developer</p>
+                </div>
+                <div class="team-member">
+                    <img src="../static/assets/team/mikolaj_wojcik.jpeg" alt="Mikołaj Wójcik">
+                    <h4>Mikołaj Wójcik</h4>
+                    <p>Software Developer</p>
+                </div>
+                <div class="team-member">
+                    <img src="../static/assets/team/filip_jawo.jpg" alt="Filip Jaworski">
+                    <h4>Filip Jaworski</h4>
+                    <p>Software Developer</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="team-category">
+            <h3>Ground Segment Team</h3>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="../static/assets/team/SimLe_sesja_023-min.jpg" alt="Patryk Martyniak">
+                    <h4>Patryk Martyniak</h4>
+                    <p>Software Developer<br>Mechanical Engineer</p>
+                </div>
+                <div class="team-member">
+                    <img src="../static/assets/team/SimLe_sesja_009-min.jpg" alt="Tomasz Lisowski">
+                    <h4>Tomasz Lisowski</h4>
+                    <p>Software Developer</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="team-category">
+            <h3>Business Team</h3>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="../static/assets/team/SimLe_sesja_003-min.jpg" alt="Maciej Zawadzki">
+                    <h4>Maciej Zawadzki</h4>
+                    <p>Business Officer</p>
+                </div>
+                <div class="team-member">
+                    <img src="../static/assets/team/SimLe_sesja_014-min.jpg" alt="Sebastian Albrecht">
+                    <h4>Sebastian Albrecht</h4>
+                    <p>Business Officer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="cta-container">
+            <h2>Join The SeaSentinel Programme</h2>
+            <p>Be part of our autonomous vehicles adventure. Apply today to join our team, contribute to our missions, and help push the boundaries of student maritime innovation.</p>
+            <a href="#" class="btn">Apply Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>SeaSentinel</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#teams">Our Team</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Vehicles</h3>
+                <ul>
+                    <li><a href="#">ASV Perkoz</a></li>
+                    <li><a href="#">ASV Rybitwa</a></li>
+                    <li><a href="#">ASV Zimorodek</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>SimLE Programs</h3>
+                <ul>
+                    <li><a href="#">SimBa</a></li>
+                    <li><a href="#">Stardust</a></li>
+                    <li><a href="#">Science</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Connect</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/SimLEpl/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/simle.pg/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/simle/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/user/ProgramSimLE"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 SimLE Scientific Association. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../static/js/seasentinel-script.js"></script>
+</body>
+</html>
