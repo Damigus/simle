@@ -1,0 +1,48 @@
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    height: 70px;
+    margin-right: 20px;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+    display: block;
+
+
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 1;
+}
