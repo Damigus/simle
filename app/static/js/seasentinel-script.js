@@ -196,3 +196,17 @@ window.addEventListener('load', function() {
     initStatistics();
     initSmoothScroll();
 });
+// wpierdole tutaj hamburgera
+function hamburgerMenu() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+  
+  document.getElementById('logo').addEventListener('click', function() {
+    window.location.href = '/main';  // Zmień na odpowiedni adres URL
+});

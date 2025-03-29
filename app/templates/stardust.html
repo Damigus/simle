@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stardust • Stratospheric Missions</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/nav.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="../static/Assets/Images/simlelogo.png"/>
+</head>
+<body>
+    <!--Tutaj jest zakladka style poniewaz wdupce tutaj kolory i zmienianie ich -->
+    <style>
+        :root {
+            --primary-color: #ffa365 !important;
+            --brigther-primary: #ffbc70 !important;
+            --darker-primary: #ff660028 !important;
+            /* To jest tło za logiem i to na dole jak masz join the project */
+            --background: url('../Assets/Images/ogurek.jpg')
+        }
+    </style>
+
+    <!-- Navigation -->
+    {% include 'nav.html' %}
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="bg-image"></div>
+        <div class="logo-overlay">
+            <img src="../static/Assets/Images/stardust_logo.png" alt="Stardust Logo">
+        </div>
+    </section>
+
+  <!-- Statistics Section -->
+  <section class="stats" id="stats">
+    <div class="stats-container">
+        <div class="stat-item">
+            <h2 id="stat-members" data-value="69">0</h2>
+            <p>Team Members</p>
+        </div>
+        <div class="stat-item">
+            <h2 id="stat-rockets" data-value="69">0</h2>
+            <p>Rockets Built</p>
+        </div>
+        <div class="stat-item">
+            <h2 id="stat-altitude" data-value="69">0</h2>
+            <p>Max Altitude (m)</p>
+        </div>
+        <div class="stat-item">
+            <h2 id="stat-started" data-value="69">0</h2>
+            <p>Founded</p>
+        </div>
+    </div>
+</section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-heading">
+                <h2>About Stardust</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="intro-text">Stardust is an interdisciplinary project led by students from the Gdańsk University of Technology, focused on launching stratospheric balloon experiments in the REXUS/BEXUS and Global Space Balloon Challenge competitions.</p>
+                    
+                    <p>The idea for stratospheric balloon missions came to us in 2015. After successful initial missions aimed at reaching the stratosphere and testing the solutions we were developing, we were ready to carry out more complex experiments. We invited young scientists from the Biotechnology Student Circle at Gdańsk University of Technology to collaborate on microbiological missions.</p>
+                    
+                    <p>Our mission continues with experiments on the microbial flora of the stratosphere, as well as studying the relationship between cosmic radiation and the risk of cancer, a subject which could inspire future researchers.</p>
+                </div>
+                <div class="slideshow-container">
+                    <div class="slides-wrapper">
+                        <div class="slide">
+                            <img src="../static/Assets/Images/ogurek.jpg" alt="Engine Test">
+                            <div class="slide-caption">Engine testing facility</div>
+                        </div>
+                        <div class="slide">
+                            <img src="../static/Assets/Images/ogurek.jpg" alt="Rocket Assembly">
+                            <div class="slide-caption">Rocket assembly process</div>
+                        </div>
+                        <div class="slide">
+                            <img src="../static/Assets/Images/ogurek.jpg" alt="Propulsion Team">
+                            <div class="slide-caption">Propulsion team at work</div>
+                        </div>
+                        <div class="slide">
+                            <img src="../static/Assets/Images/ogurek.jpg" alt="Launch Preparation">
+                            <div class="slide-caption">Preparing for launch</div>
+                        </div>
+                    </div>
+                    <div class="slide-nav">
+                        <div class="slide-arrow prev-arrow">&#10094;</div>
+                        <div class="slide-arrow next-arrow">&#10095;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="history" id="history">
+        <div class="history-content">
+            <h2>Our Journey: The Evolution of Stardust</h2>
+            <p>
+                Stardust began as an ambitious student initiative driven by a passion for aerospace engineering and scientific exploration. From the early stages of research and development to the actual launches of stratospheric balloons, the project has grown steadily. Over time, we have expanded our work to include microbiological research in collaboration with the Biotechnology Student Circle.
+            </p>
+        </div>
+        <div class="slideshow">
+            <img src="../static/Assets/Images/ogurek.jpg" alt="Stardust History 1" class="active">
+            <img src="../static/Assets/Images/ogurek.jpg" alt="Stardust History 2">
+            <img src="../static/Assets/Images/ogurek.jpg" alt="Stardust History 3">
+            <img src="../static/Assets/Images/ogurek.jpg" alt="Stardust History 4">
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline" id="timeline">
+        <div class="timeline-heading">
+            <h2>Stardust Development Timeline</h2>
+        </div>
+        <div class="timeline-container">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item">
+                <div class="timeline-block">
+                    <div class="timeline-image">
+                        <img src="../static/Assets/Images/ogurek.jpg" alt="Milestone 2015">
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2015</div>
+                        <p>Stardust project established. First missions focused on reaching the stratosphere and testing new solutions.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item">
+                <div class="timeline-block">
+                    <div class="timeline-image">
+                        <img src="../static/Assets/Images/ogurek.jpg" alt="Milestone 2017">
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2017</div>
+                        <p>Collaboration with the Biotechnology Student Circle to launch microbiological experiments and sample collection from the stratosphere.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item">
+                <div class="timeline-block">
+                    <div class="timeline-image">
+                        <img src="../static/Assets/Images/ogurek.jpg" alt="Milestone 2019">
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2019</div>
+                        <p>Successful participation in the REXUS/BEXUS competition, launching experiments related to microbiology and cosmic radiation.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Timeline Item 4 -->
+            <div class="timeline-item">
+                <div class="timeline-block">
+                    <div class="timeline-image">
+                        <img src="../static/Assets/Images/ogurek.jpg" alt="Milestone 2020">
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020</div>
+                        <p>Participation in a stratospheric mission from Esrange Space Center in Sweden, involving microbiological and radiation experiments.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Timeline Item 5 -->
+            <div class="timeline-item">
+                <div class="timeline-block">
+                    <div class="timeline-image">
+                        <img src="../static/Assets/Images/ogurek.jpg" alt="Milestone 2023">
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023</div>
+                        <p>Ongoing development of biological experiments and the creation of a vacuum chamber prototype for simulating stratospheric conditions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Our Teams Section -->
+    <section class="join-teams" id="teams">
+        <h2>Join Our Teams</h2>
+        <div class="teams-container">
+            <div class="team-card">
+                <i class="fas fa-fire"></i>
+                <h3>Experiment & Research</h3>
+                <div class="sub-areas">
+                    <span class="sub-area-card">Microbiology</span>
+                    <span class="sub-area-card">Radiation Studies</span>
+                </div>
+                <div class="team-description">
+                    <p>The Experiment & Research team focuses on conducting experiments related to microbial life in the stratosphere and the effects of cosmic radiation on living organisms.</p>
+                </div>
+                <a href="#contact" class="read-more">Read more</a>
+            </div>
+
+            <div class="team-card">
+                <i class="fas fa-wrench"></i>
+                <h3>Engineering</h3>
+                <div class="sub-areas">
+                    <span class="sub-area-card">Rocketry</span>
+                    <span class="sub-area-card">Balloon Design</span>
+                </div>
+                <div class="team-description">
+                    <p>The Engineering team is responsible for designing, building, and launching the balloons and rockets used in our missions.</p>
+                </div>
+                <a href="#contact" class="read-more">Read more</a>
+            </div>
+
+            <div class="team-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Software & Data</h3>
+                <div class="sub-areas">
+                    <span class="sub-area-card">Flight Control</span>
+                    <span class="sub-area-card">Data Analysis</span>
+                </div>
+                <div class="team-description">
+                    <p>The Software & Data team manages flight control systems and analyzes the data collected during the missions to improve the results of future experiments.</p>
+                </div>
+                <a href="#contact" class="read-more">Read more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="cta-container">
+            <h2>Join The Stardust Project</h2>
+            <p>Be part of an innovative space research project. Apply today to join our team, contribute to groundbreaking experiments, and help push the boundaries of student-led aerospace research.</p>
+            <a href="/form" class="btn">Apply Now</a>
+        </div>
+    </section>
+
+    <!--Footer-->
+    {% include 'footer.html' %}
+
+    <script src="../static/js/script.js"></script>
+</body>
+</html>

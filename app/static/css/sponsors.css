@@ -1,0 +1,17 @@
+.sponsors {
+    margin: 0;
+    margin-top: 80px; /* Zwiększenie marginesu górnego, aby obrazek nie nachodził na menu */
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Wyrównanie poziome */
+    
+}
+
+.sponsors img {
+    max-width: 100%; /* Dopasowanie szerokości do ekranu */
+    min-width: 350px; /* Minimalna szerokość obrazka */
+    height: auto; /* Zachowanie proporcji */
+    width: 67%;
+    margin-top: 20px; /* Dodanie marginesu od góry, aby obrazek miał trochę przestrzeni od kontenera */
+
+}

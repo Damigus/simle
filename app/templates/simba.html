@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SimBa • Rocket Innovation</title>
-    <link rel="stylesheet" href="../static/css/simba-styles.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
     <link rel="stylesheet" href="../static/css/nav.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="../static/Assets/Images/simlelogo.png"/>
-
 </head>
 <body>
+    <!--Tutaj jest zakladka style poniewaz wdupce tutaj kolory i zmienianie ich -->
+    <style>
+        :root {
+            --primary-color: #ff6600 !important;
+            --brigther-primary: #ffbc70 !important;
+            --darker-primary: #ff66001a !important;
+            /* To jest tło za logiem i to na dole jak masz join the project */
+            --background: url('../Assets/Images/enginetest.jpg')
+        }
+    </style>
+
+
+
     <!-- Navigation -->
     {% include 'nav.html' %}
 
@@ -26,19 +39,19 @@
     <section class="stats" id="stats">
         <div class="stats-container">
             <div class="stat-item">
-                <h2 id="stat-members">0</h2>
+                <h2 id="stat-members" data-value="32">0</h2>
                 <p>Team Members</p>
             </div>
             <div class="stat-item">
-                <h2 id="stat-rockets">0</h2>
+                <h2 id="stat-rockets" data-value="7">0</h2>
                 <p>Rockets Built</p>
             </div>
             <div class="stat-item">
-                <h2 id="stat-altitude">0</h2>
+                <h2 id="stat-altitude" data-value="8500">0</h2>
                 <p>Max Altitude (m)</p>
             </div>
             <div class="stat-item">
-                <h2 id="stat-started">0</h2>
+                <h2 id="stat-started" data-value="2017">0</h2>
                 <p>Founded</p>
             </div>
         </div>
@@ -268,61 +281,13 @@
         <div class="cta-container">
             <h2>Join The SimBa Project</h2>
             <p>Be part of our rocket engineering adventure. Apply today to join our team, contribute to our missions, and help push the boundaries of student aerospace innovation.</p>
-            <a href="#" class="btn">Apply Now</a>
+            <a href="/form" class="btn">Apply Now</a>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-column">
-                <h3>SimBa</h3>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Our Team</a></li>
-                    <li><a href="#">Achievements</a></li>
-                    <li><a href="#">Research</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Technology</h3>
-                <ul>
-                    <li><a href="#">Propulsion</a></li>
-                    <li><a href="#">Avionics</a></li>
-                    <li><a href="#">Recovery</a></li>
-                    <li><a href="#">Materials</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Projects</h3>
-                <ul>
-                    <li><a href="#">SimBa</a></li>
-                    <li><a href="#">Stardust</a></li>
-                    <li><a href="#">SeaSentinel</a></li>
-                    <li><a href="#">Science</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Contact</h3>
-                <ul>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Partnerships</a></li>
-                    <li><a href="#">Sponsorships</a></li>
-                    <li><a href="#">Media</a></li>
-                </ul>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2025 SimLE Scientific Association. All rights reserved. Privacy Policy | Terms of Service</p>
-            </div>
-        </div>
-    </footer>
+    <!--Footer-->
+    {% include 'footer.html' %}
 
-    <!-- Modal for timeline images -->
-    <div id="modal" class="modal">
-        <span class="close">&times;</span>
-        <img id="modal-img" class="modal-content">
-    </div>
-
-    <script src="../static/js/simba-script.js"></script>
+    <script src="../static/js/script.js"></script>
 </body>
 </html>
