@@ -6,6 +6,7 @@
     <title>SeaSentinel • Autonomous Surface Vehicles</title>
     <link rel="stylesheet" href="../static/css/seasentinel-styles.css">
     <link rel="stylesheet" href="../static/css/nav.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="icon" type="image/png" href="../static/Assets/Images/simlelogo.png"/>
 
@@ -320,46 +321,8 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-column">
-                <h3>SeaSentinel</h3>
-                <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#teams">Our Team</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Vehicles</h3>
-                <ul>
-                    <li><a href="#">ASV Perkoz</a></li>
-                    <li><a href="#">ASV Rybitwa</a></li>
-                    <li><a href="#">ASV Zimorodek</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>SimLE Programs</h3>
-                <ul>
-                    <li><a href="#">SimBa</a></li>
-                    <li><a href="#">Stardust</a></li>
-                    <li><a href="#">Science</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Connect</h3>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/SimLEpl/"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/simle.pg/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/company/simle/"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.youtube.com/user/ProgramSimLE"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2025 SimLE Scientific Association. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    {% include 'footer.html' %}
+
 
     <script src="../static/js/seasentinel-script.js"></script>
 </body>

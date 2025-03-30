@@ -626,25 +626,10 @@ body {
         max-width: 100%;
     }
     
-    .footer-column {
-        width: 50%;
-    }
 }
 
 @media (max-width: 480px) {
     .hero h1 {
         font-size: 32px;
     }
-    
-    .footer-column {
-        width: 100%;
-    }
-}
-
-
-.social-icons a {
-    background-color: #ffffff !important;
-    color: #646464 !important;
-
-
 }

@@ -439,19 +439,8 @@ body {
     text-align: justify;
 }
 
-/* Timeline Marker */
-.timeline-item::before {
-    content: "";
-    position: absolute;
-    top: 20px;
-    left: calc(50% - 8px);
-    width: 16px;
-    height: 16px;
-    background: var(--primary-color);
-    border-radius: 50%;
-    border: 3px solid #1a1a1a;
-    z-index: 1;
-}
+
+
 
 .timeline-date {
     font-weight: bold;
@@ -497,8 +486,10 @@ body {
 
 .team-card {
     background-color: #0d0d0d;
+    margin: 0 auto; /* Wyśrodkowanie */
     border-radius: 8px;
     padding: 25px;
+    padding-right:25px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
@@ -545,6 +536,7 @@ body {
 }
 
 .team-card .sub-areas .sub-area-card {
+    
     background-color: #333;
     color: #fff;
     padding: 8px 15px;
@@ -747,7 +739,7 @@ footer {
     }
     
     .timeline-container::before {
-        left: 20px;
+        display: none;
     }
     
     .timeline-item {

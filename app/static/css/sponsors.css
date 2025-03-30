@@ -1,4 +1,5 @@
 .sponsors {
+    
     margin: 0;
     margin-top: 80px; /* Zwiększenie marginesu górnego, aby obrazek nie nachodził na menu */
     padding: 0;
@@ -13,5 +14,17 @@
     height: auto; /* Zachowanie proporcji */
     width: 67%;
     margin-top: 20px; /* Dodanie marginesu od góry, aby obrazek miał trochę przestrzeni od kontenera */
+
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 0px 0px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+body {
+    background-color: #ffffff;
 
 }
