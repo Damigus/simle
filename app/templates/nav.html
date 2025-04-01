@@ -3,30 +3,30 @@
 
         <img src="../static/Assets/Images/simlelogo.png" alt="Simle Logo" class="logo" id="logo">
 
-            <a class="responsive_guwno" href="/form">Recruitment</a>
+            <a class="responsive_guwno" href="/form">Rekrutacja</a>
             {% if active_page != 'sponsors' %}
-            <a href="/main#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="/main#projects">Projekty</a>
+            <a href="#contact">Kontakt</a>
             {% endif %}
 
             {% if active_page == 'main' %}
-            <a href="#technology">Technology</a>
-            <a href="/sponsors">Sponsors</a>
+            <a href="#technology">Technologia</a>
+            <a href="/sponsors">Współprace </a>
 
             {% endif %}
 
             {% if active_page == 'seasentinel' %}
-            <a href="#projects">Projects</a>
+            <a href="#projects">Pojazdy</a>
             {% endif %}
 
-            {% if active_page =='simba' or active_page =='business' or active_page =='stardust' or active_page == 'stellar' or active_page =='singo'or active_page =='science'%}
-            <a href="#history">History</a>
+            {% if active_page =='simba' or active_page =='business' or active_page =='stardust' or active_page =='singo'or active_page =='science'%}
+            <a href="#history">Historia</a>
             <a href="#timeline">Timeline</a>
-            <a href="#teams">Teams</a>
+            <a href="#teams">Zespoły</a>
             {% endif %}
 
-            {% if active_page == 'seasentinel'%}
-            <a href="#teams">Team</a>
+            {% if active_page == 'seasentinel' or active_page == 'stellar'%}
+            <a href="#teams">Zespoły</a>
             {% endif %}
 
             {% if active_page != 'sponsors' %}
@@ -36,9 +36,9 @@
 
 
             {% if active_page == 'sponsors' %}
-            <a href="/main#projects">Projects</a>
-            <a href="/main#contact">Contact</a>
-            <a href="/main#technology">Technology</a>
+            <a href="/main#projects">Projkety</a>
+            <a href="/main#contact">Kontakt</a>
+            <a href="/main#technology">Technologia</a>
             <a href="/main#about">About</a>
 
             {% endif %}
