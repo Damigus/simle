@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,12 @@
     <link rel="stylesheet" href="../static/css/main.css">
     <link rel="stylesheet" href="../static/css/nav.css">
     <link rel="stylesheet" href="../static/css/footer.css">
-    <link rel="icon" type="image/png" href="../static/Assets/Images/simlelogo.png"/>
+    <link rel="icon" type="image/png" href="../static/Assets/Images/simlelogo.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
 
 </head>
+
 <body>
     <!-- Navigation -->
     {% include 'nav.html' %}
@@ -34,30 +36,36 @@
             </div>
             <div class="who-we-are-content">
                 <div class="who-we-are-text">
-                    <p align="justify", class="intro-text">Koło Naukowe SimLE to grupa utalentowanych i ambitnych studentów Politechniki Gdańskiej, których łączy przede wszystkim chęć tworzenia.</p>
-                    
-                    <p align="justify">Wierzymy, że dzięki pracy w interdyscyplinarnych zespołach możemy sięgać gwiazd, podążać tam, gdzie nikt wcześniej nie dotarł, i na co dzień robić to, co dla naszych rówieśników może wydawać się niemożliwe.</p>
-                    
-                    <p align="justify">W ramach naszego koła realizujemy programy i projekty, które łączą studentów z różnych kierunków, wydziałów, a nawet uczelni. Tworzymy przestrzeń, narzędzia i warunki – wszystko, co niezbędne, aby młodzi ludzie mogli doświadczać nauki w praktyce, rozwijać swoje pasje i odkrywać swój potencjał.</p>
-                    
+                    <p align="justify" , class="intro-text">Koło Naukowe SimLE to grupa utalentowanych i ambitnych
+                        studentów Politechniki Gdańskiej, których łączy przede wszystkim chęć tworzenia.</p>
+
+                    <p align="justify">Wierzymy, że dzięki pracy w interdyscyplinarnych zespołach możemy sięgać gwiazd,
+                        podążać tam, gdzie nikt wcześniej nie dotarł, i na co dzień robić to, co dla naszych rówieśników
+                        może wydawać się niemożliwe.</p>
+
+                    <p align="justify">W ramach naszego koła realizujemy programy i projekty, które łączą studentów z
+                        różnych kierunków, wydziałów, a nawet uczelni. Tworzymy przestrzeń, narzędzia i warunki –
+                        wszystko, co niezbędne, aby młodzi ludzie mogli doświadczać nauki w praktyce, rozwijać swoje
+                        pasje i odkrywać swój potencjał.</p>
+
                 </div>
                 <div class="slideshow-container">
                     <div class="slides-wrapper">
                         <div class="slide">
                             <img src="../static/Assets/Images/enginetest.jpg" alt="SimLE Team">
-                            
+
                         </div>
                         <div class="slide">
                             <img src="../static/Assets/Images/science2.jpg" alt="SimLE Lab">
-                            
+
                         </div>
                         <div class="slide">
                             <img src="../static/Assets/Images/stardusttl (3).jpg" alt="Rocket Launch">
-                            
+
                         </div>
                         <div class="slide">
                             <img src="../static/Assets/Images/whatwedo2.JPG" alt="Team Collaboration">
-                            
+
                         </div>
                         <div class="slide">
                             <img src="../static/Assets/Images/stardust1.jpg" alt="xd">
@@ -79,8 +87,9 @@
                 <h2>SimLE w akcji </h2>
             </div>
             <div class="video-placeholder" id="video-container">
-                
-                <video preload="auto" muted playsinline autoplay loop id="rocket-video" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; object-fit: cover;">
+
+                <video preload="auto" muted playsinline autoplay loop id="rocket-video"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; object-fit: cover;">
                     <source src="../static/Assets/Videos/your-banner.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -93,7 +102,7 @@
         <div class="gallery-container">
             <div class="gallery-heading">
                 <h2>Nasze Przedsięwzięcia </h2>
-                
+
             </div>
             <div class="gallery-grid">
                 <a href="/stardust" class="gallery-item project-card">
@@ -135,7 +144,7 @@
                     <img src="../static/Assets/Images/stellar1.jpg" alt="Stellar">
                     <div class="gallery-item-content">
                         <h3>STELLAR</h3>
-                        <p>Projket budowy łazika marsjańskiego</p>
+                        <p>Projekt budowy łazika marsjańskiego</p>
                     </div>
                 </a>
                 <a href="/business" class="gallery-item project-card">
@@ -153,7 +162,8 @@
     <section class="cta" id="contact">
         <div class="cta-container">
             <h2>Przyłącz się do jedynego takiego koła naukowego</h2>
-            <p> Zapisz się, aby otrzymywać informacje o naszych misjach, przełomach technologicznych oraz być ich częścią.</p>
+            <p> Zapisz się, aby otrzymywać informacje o naszych misjach, przełomach technologicznych oraz być ich
+                częścią.</p>
             <a href="/form" class="btn">Dołącz już dziś!</a>
         </div>
     </section>
@@ -162,4 +172,5 @@
     {% include 'footer.html' %}
     <script src="../static/js/main-script.js"></script>
 </body>
+
 </html>
