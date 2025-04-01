@@ -19,3 +19,6 @@ flask --debug run
 `pip list` - wyświetlenie listy pobranych pakietów
 
 `deactivate` - wyjście z wirtualnego środowiska
+
+### Uruchomienie programu
+`python main.py` lub `puthon3 main.py`
