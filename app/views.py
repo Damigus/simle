@@ -58,3 +58,11 @@ def stellar():
 @views.route("/form")
 def form():
     return render_template("form.html", active_page='form')
+
+from flask import Blueprint, send_from_directory, current_app
+
+main = Blueprint('main', __name__)
+
+@main.route('/robots.txt')
+def robots():
+    return send_from_directory(current_app.static_folder, 'robots.txt')
