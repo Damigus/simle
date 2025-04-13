@@ -22,3 +22,15 @@ flask --debug run
 
 ### Uruchomienie programu
 `python main.py` lub `puthon3 main.py`
+
+# DOCKER
+
+`docker build --tag simle-docker .` - utworzenie dockera
+
+`docker run --name simle-docker -d -p 5000:5000 simle-docker` - uruchomienie
+
+`docker ps` - wyświetla działające
+
+`docker stop <container-id/name>` - mówi samo za siebie
+
+`docker rm -f simle-docker` - usuwanie po nazwie kontenera
